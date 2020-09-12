@@ -14,7 +14,7 @@
         android:layout_marginEnd="25dp"
         android:layout_marginBottom="128dp"
         android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/batuButton"
+        app:layout_constraintBottom_toTopOf="@+id/batu"
         app:layout_constraintEnd_toEndOf="@+id/numberText"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -26,7 +26,7 @@
         android:layout_marginBottom="245dp"
         android:text="start!"
         android:textSize="60sp"
-        app:layout_constraintBottom_toTopOf="@+id/batuButton"
+        app:layout_constraintBottom_toTopOf="@+id/batu"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -34,19 +34,20 @@
         app:layout_constraintVertical_bias="0.368" />
 
     <Button
-        android:id="@+id/maruButton"
+        android:id="@+id/maru"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="53dp"
         android:layout_marginEnd="7dp"
         android:backgroundTint="#F44336"
+        android:onClick="maru"
         android:text="〇"
         android:textColor="#FFFFFF"
         android:textSize="50sp"
-        app:layout_constraintBottom_toBottomOf="@+id/batuButton"
-        app:layout_constraintEnd_toStartOf="@+id/batuButton"
+        app:layout_constraintBottom_toBottomOf="@+id/batu"
+        app:layout_constraintEnd_toStartOf="@+id/batu"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/batuButton" />
+        app:layout_constraintTop_toTopOf="@+id/batu" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -67,18 +68,19 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/batuButton"
+        android:id="@+id/batu"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginEnd="51dp"
         android:layout_marginBottom="80dp"
         android:backgroundTint="#3F51B5"
+        android:onClick="batu"
         android:text="×"
         android:textColor="#FFFFFF"
         android:textSize="50sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/maruButton"
+        app:layout_constraintStart_toEndOf="@+id/maru"
         app:layout_constraintTop_toBottomOf="@+id/maruCountText" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
