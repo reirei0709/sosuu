@@ -5,12 +5,15 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
+import kotlinx.android.synthetic.main.activity_first_page.*
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlin.random.Random
 
 class MainActivity : AppCompatActivity() {
     companion object {
-        private const val QUESION_COUNT: Int = 10
+        //val number = intent.getStringExtra("number")
+
+         var QUESION_COUNT: Int = 10
     }
 
     var Random:Random = kotlin.random.Random
@@ -22,6 +25,22 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        val number =0
+
+
+        //val three = intent.getIntExtra("three",3)
+        //val five = intent.getIntExtra("five",5)
+        //val ten = intent.getIntExtra("ten",10)
+
+
+
+        //val Random:Random = kotlin.random.Random
+        //val numbers: IntArray = IntArray(QUESION_COUNT)
+        //var maruCount:Int = 0
+        //var answerCount:Int = 0
+
+
 
         for (i in 0 until QUESION_COUNT) {
 
@@ -46,6 +65,17 @@ class MainActivity : AppCompatActivity() {
 
 
         fun maru(v:View) {
+
+            //val number = intent.getStringExtra("number")
+
+            //var QUESION_COUNT: Int = number.toInt()
+
+            //var Random:Random = kotlin.random.Random
+            //val numbers: IntArray = IntArray(QUESION_COUNT)
+
+
+
+
             var answer = true
 
             for (i in 2 until numbers[answerCount]) {
@@ -106,6 +136,17 @@ class MainActivity : AppCompatActivity() {
         }
 
         fun batu(v:View) {
+
+
+           // val number = intent.getStringExtra("number")
+
+            //var QUESION_COUNT: Int = number.toInt()
+
+            //var Random:Random = kotlin.random.Random
+            //val numbers: IntArray = IntArray(QUESION_COUNT)
+
+
+
             var answer = true
             for (i in 2 until numbers[answerCount]) {
                 if (numbers[answerCount] % i == 0) {
