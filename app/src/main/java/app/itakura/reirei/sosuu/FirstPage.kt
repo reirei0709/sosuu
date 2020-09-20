@@ -15,7 +15,7 @@ class FirstPage : AppCompatActivity() {
 
 
         threeButton.setOnClickListener {
-            //number = 3
+            number = 3
             val MainPage = Intent(this,MainActivity::class.java)
             MainPage.putExtra("number",number)
             startActivity(MainPage)
@@ -23,7 +23,7 @@ class FirstPage : AppCompatActivity() {
         }
 
         fiveButton.setOnClickListener {
-            //number = 5
+            number = 5
             val MainPage = Intent(this,MainActivity::class.java)
             MainPage.putExtra("number",number)
             startActivity(MainPage)

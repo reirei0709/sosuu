@@ -14,6 +14,7 @@ class MainActivity : AppCompatActivity() {
         //val number = intent.getStringExtra("number")
 
          var  QUESION_COUNT: Int = 10
+
     }
 
     var Random:Random = kotlin.random.Random
@@ -28,14 +29,14 @@ class MainActivity : AppCompatActivity() {
 
         //val number =0
 
-        val number = intent.getIntExtra("number",0)
+        val number = intent.getIntExtra("number", 0)
 
         // var QUESION_COUNT: Int = number
 
 
-        //val three = intent.getIntExtra("three",3)
-        //val five = intent.getIntExtra("five",5)
-        //val ten = intent.getIntExtra("ten",10)
+        //val three = intent.getIntExtra("number",3)
+        //val five = intent.getIntExtra("number",5)
+        //val ten = intent.getIntExtra("number",10)
 
 
 
