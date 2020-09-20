@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
     companion object {
         //val number = intent.getStringExtra("number")
 
-         var QUESION_COUNT: Int = 10
+         var  QUESION_COUNT: Int = 10
     }
 
     var Random:Random = kotlin.random.Random
@@ -26,7 +26,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val number =0
+        //val number =0
+
+        val number = intent.getIntExtra("number",0)
+
+        // var QUESION_COUNT: Int = number
 
 
         //val three = intent.getIntExtra("three",3)
@@ -42,7 +46,7 @@ class MainActivity : AppCompatActivity() {
 
 
 
-        for (i in 0 until QUESION_COUNT) {
+        for (i in 0 until number) {
 
 
             val randomNumber = Random.nextInt(100)
@@ -65,6 +69,8 @@ class MainActivity : AppCompatActivity() {
 
 
         fun maru(v:View) {
+
+            val number = intent.getIntExtra("number",0)
 
             //val number = intent.getStringExtra("number")
 
@@ -107,7 +113,7 @@ class MainActivity : AppCompatActivity() {
             //numberText.text = numbers[answerCount].toString()
             answerCount += 1
 
-            if (answerCount == QUESION_COUNT){
+            if (answerCount == number){
 
                 numberText.text = maruCount.toString() + "点"
                 numberText.setTextColor(Color.RED)
@@ -137,6 +143,8 @@ class MainActivity : AppCompatActivity() {
 
         fun batu(v:View) {
 
+            val number = intent.getIntExtra("number",0)
+
 
            // val number = intent.getStringExtra("number")
 
@@ -164,7 +172,7 @@ class MainActivity : AppCompatActivity() {
             //numberText.text = numbers[answerCount].toString()
             answerCount += 1
 
-            if (answerCount == QUESION_COUNT){
+            if (answerCount == number){
                 numberText.text = maruCount.toString() + "点"
                 numberText.setTextColor(Color.RED)
 
